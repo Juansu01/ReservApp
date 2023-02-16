@@ -40,6 +40,15 @@ confirmationRoute.get('/booking/all', async (req, res) => {
     return res.status(200).json(allOrders)
 })
 
+confirmationRoute.put('/booking/:id', async (req, res) => {
+    const orderId = req.params.id
+    const order = ordenes.findByPk(id)
+
+    if (order) {
+        const { } = req.body
+    }
+})
+
 confirmationRoute.get('/booking/:id', async (req, res) => {
     const id = req.params.id
     const order = await ordenes.findByPk(id, { include: ['usuario'] })

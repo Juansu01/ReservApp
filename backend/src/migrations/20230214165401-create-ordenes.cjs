@@ -35,6 +35,10 @@ module.exports = {
       tipo_de_reserva: {
         type: Sequelize.STRING(100)
       },
+      cantidad_de_personas: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
+      },
       descripcion_observaciones: {
         type: Sequelize.STRING(300)
       },

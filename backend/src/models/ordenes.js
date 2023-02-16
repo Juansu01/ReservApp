@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     fecha_de_reserva: DataTypes.DATE,
     tipo_de_reserva: DataTypes.STRING,
+    cantidad_de_personas: DataTypes.INTEGER,
     descripcion_observaciones: DataTypes.STRING,
     usuario_id: DataTypes.STRING,
     confirmada: DataTypes.BOOLEAN,
