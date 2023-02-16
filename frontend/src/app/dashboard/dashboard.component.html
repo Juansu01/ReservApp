@@ -1,0 +1,39 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Tipo De Documento</th>
+                <th scope="col">Identificacion</th>
+                <th scope="col">Email</th>
+                <th scope="col">Fecha De Reserva</th>
+                <th scope="col">Tipo De Reserva</th>
+                <th scope="col">Descripción/Observaciones</th>
+                <th scope="col">Confirmada</th>
+                <th scope="col">Cantidad de personas</th>
+                <th scope="col">Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{order.nombres}}</td>
+                <td>{{order.apellidos}}</td>
+                <td>{{order.tipo_de_documento}}</td>
+                <td>{{order.identificacion}}</td>
+                <td>{{order.email}}</td>
+                <td>{{order.fecha_de_reserva}}</td>
+                <td>{{order.tipo_de_reserva}}</td>
+                <td>{{order.descripcion_observaciones}}</td>
+                <span *ngIf="order.confirmada">
+                    <td>Sí</td>
+                </span>
+                <span *ngIf="!(order.confirmada)">
+                    <td>No</td>
+                </span>
+                <td>{{order.cantidad_de_personas}}</td>
+                <td><button class="btn btn-danger" (click)="displayPopUp(order.id)">Editar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

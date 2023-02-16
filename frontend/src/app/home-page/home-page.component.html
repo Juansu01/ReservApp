@@ -1,0 +1,8 @@
+<div class="container">
+    <div *ngIf="isAuthenticated">
+        <h1>User is authenticated</h1>
+    </div>
+    <div *ngIf="!(isAuthenticated)">
+        <h1>You need to log in</h1>
+    </div>
+</div>

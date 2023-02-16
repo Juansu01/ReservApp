@@ -1,0 +1,56 @@
+<div class="container p5 pop-up-container">
+    <h2>Editando reserva de: {{order.nombres}}</h2>
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="nombres">Nombres</label>
+            <input value="{{order.nombres}}" name="nombres" type="text" id="nombres" class="form-control" matInput
+                formControlName="nombres" />
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="apellidos">Apellidos</label>
+            <input value="{{order.apellidos}}" name="apellidos" type="text" id="apellidos" class="form-control" matInput
+                formControlName="apellidos" />
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="tipoDocumento">Tipo de documento</label>
+            <select value="{{order.tipo_de_documento}}" name="tipo_de_documento" id="tipoDocumento" name="tipoDocumento"
+                class="form-control" formControlName="tipo_de_documento">
+                <option value="Cedula">Cedula</option>
+                <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                <option value="Cedula de Extranjería">Cedula de Extranjería</option>
+                <option value="Per Especial Permanencia">Per Especial Permanencia</option>
+            </select>
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="email">Identificacion</label>
+            <input value="{{order.identificacion}}" name="identificacion" type="text" id="identificacion"
+                class="form-control" matInput formControlName="identificacion" />
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="fecha">Fecha de reserva</label>
+            <input value="{{orderDate}}" name="fecha_de_reserva" type="date" id="fecha" class="form-control" matInput
+                formControlName="fecha_de_reserva" />
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="tipoReserva">Tipo de reserva:</label>
+            <select value="{{order.tipo_de_reserva}}" name="tipo_de_reserva" id="tipoReserva" name="tipoReserva"
+                class="form-control" formControlName="tipo_de_reserva">
+                <option value="Cena">Cena</option>
+                <option value="Almuerzo">Almuerzo</option>
+                <option value="Onces">Onces</option>
+                <option value="Cumpleaños">Cumpleaños</option>
+                <option value="Ocación Especial">Ocación Especial</option>
+            </select>
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="cantidad">Cantidad de personas</label>
+            <input value="{{order.cantidad_de_personas}}" name="cantidad_de_personas" type="number" id="catidad"
+                class="form-control" matInput formControlName="cantidad_de_personas" />
+        </div>
+        <div class="float-right">
+            <button class="btn btn-primary px-3" (click)="confirmOrder(order.id)">Confirmar</button>
+            <button class="btn btn-danger">Editar</button>
+        </div>
+    </form>
+</div>

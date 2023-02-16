@@ -1,0 +1,17 @@
+<div class="container form-container">
+    <h1 class="px-3">Entra a tu cuenta</h1>
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <div class="form-outline mb-4">
+            <input type="email" id="email" class="form-control" matInput formControlName="email" />
+            <label class="form-label" for="email">Email</label>
+        </div>
+        <div class="form-outline mb-4">
+            <input type="password" id="password" class="form-control" matInput formControlName="password" />
+            <label class="form-label" for="password">Contraseña</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mb-4">Entrar</button>
+        <div class="text-center">
+            <p>No tienes cuenta? <a routerLink="/register">Registrarme</a></p>
+        </div>
+    </form>
+</div>
