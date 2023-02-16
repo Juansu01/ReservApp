@@ -1,5 +1,7 @@
 # Descripción de las rutas en la API
 
+La ruta base es `http://localhost:8080/api` puedes enviar un GET request para verificar que la API funciona.
+
 ## Ruta Auth
 
 ```javascript
