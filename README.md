@@ -16,7 +16,7 @@ Esta aplicación te permite tener un registro de las personas que han hecho rese
 
 ### Setup de la base de datos
 
-Crea un archivo de configuración en el directorio src y en ese archivo pon la info de tu base de datos.
+Crea un archivo de configuración "config.json" en el directorio src/config y en ese archivo pon la info de tu base de datos.
 
 ```javascript
 {
