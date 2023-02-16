@@ -69,7 +69,7 @@ Server successfully started!
 
 ### Setup del frontend
 
-Dentro del directorio frontend escribe los siguientes comandos
+Dentro del directorio frontend escribe los siguientes comandos:
 
 ```
 npm install
