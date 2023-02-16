@@ -1,4 +1,4 @@
-# Aquí te explico las diferentes vistas del frontent
+# Aquí te explico las diferentes vistas del frontend
 
 ### Home
 
