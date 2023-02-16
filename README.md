@@ -66,3 +66,14 @@ Y eso es todo para ejecutar el backend! Al final deberías tener un mensaje en l
 Executing (default): SELECT 1+1 AS result
 Server successfully started!
 ```
+
+### Setup del frontend
+
+Dentro del directorio frontend escribe los siguientes comandos
+
+```
+npm install
+npm run dev
+```
+
+Y con eso ya el frontend debería estar corriendo! Se va a abrir una nueva pestaña en tu navegador.
